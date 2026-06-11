@@ -1,6 +1,3 @@
 blank_issues_enabled: false
-contact_links:
-  - name: "Guía de revisión"
-    url: "https://github.com/jrpmichel/Retroalimentacion_PM_La_Salle"
-    about: "Consulte el README del repositorio antes de registrar observaciones."
+contact_links: []
 
