@@ -57,7 +57,7 @@ body:
     id: unidad
     attributes:
       label: Unidad, tema o sección específica
-      placeholder: Ejemplo: Unidad 3, evaluación, ejercicios, proyecto integrador, PM6_CalDif, etc.
+      placeholder: "Ejemplo: Unidad 3, evaluación, ejercicios, proyecto integrador, PM6_CalDif, etc."
     validations:
       required: true
 
