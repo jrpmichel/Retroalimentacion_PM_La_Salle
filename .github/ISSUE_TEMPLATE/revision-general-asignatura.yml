@@ -1,0 +1,104 @@
+name: Revisión general por asignatura
+description: Registrar una revisión amplia de una asignatura o de la serie completa.
+title: "[Revisión general] "
+labels: ["revision-general", "por-revisar"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use esta plantilla para registrar una revisión global por asignatura. Para observaciones muy específicas, use la plantilla "Observación puntual".
+
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre del participante
+      placeholder: Nombre completo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: campus
+    attributes:
+      label: Campus
+      options:
+        - Campestre
+        - Américas
+        - San Francisco
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: asignatura
+    attributes:
+      label: Asignatura revisada
+      options:
+        - PM I — Pensamiento Aritmético
+        - PM II — Introducción al Álgebra
+        - PM III — Pensamiento Algebraico e Introducción a Geometría Plana
+        - PM IV — Trigonometría y Geometría Analítica
+        - PM V — Cálculo Diferencial
+        - PM VI — Pensamiento Estadístico y Probabilístico
+        - PM6_CalDif — Cálculo Diferencial Aplicado y Modelación Variacional
+        - Serie completa PM I–VI
+    validations:
+      required: true
+
+  - type: textarea
+    id: fortalezas
+    attributes:
+      label: Fortalezas identificadas
+      placeholder: Indique los elementos que deben conservarse.
+    validations:
+      required: false
+
+  - type: textarea
+    id: areas_mejora
+    attributes:
+      label: Áreas de mejora
+      placeholder: Indique debilidades, riesgos, contenidos sobrecargados o elementos faltantes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contenidos
+    attributes:
+      label: Ajustes sugeridos en contenidos
+      placeholder: Indique contenidos por conservar, ajustar, eliminar o incorporar.
+    validations:
+      required: false
+
+  - type: textarea
+    id: didactica
+    attributes:
+      label: Comentarios sobre ejemplos, ejercicios y evaluación
+      placeholder: Comente ejercicios graduados, proyectos, rúbricas, mini-exámenes, actividades o recursos digitales.
+    validations:
+      required: false
+
+  - type: textarea
+    id: lasallista
+    attributes:
+      label: Comentarios sobre sello lasallista
+      placeholder: Comente acompañamiento, comunidad, justicia, servicio, ética y formación integral.
+    validations:
+      required: false
+
+  - type: textarea
+    id: normativa
+    attributes:
+      label: Comentarios sobre alineación DGB-SEP / MCCEMS
+      placeholder: Comente progresiones, evaluación formativa, carga horaria, evidencias y correspondencia curricular.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: Prioridad general de ajuste
+      options:
+        - Alta
+        - Media
+        - Baja
+    validations:
+      required: true
